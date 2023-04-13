@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Alkatra', cursive;
+    line-height: 1.4;
+    font-weight: 300;
+}
+.logo_container img{
+    width: 80px;
+    height: 80px;
+}
+.bar_icon i{
+    color: black;
+    font-size: 32px;
+    
+}
+nav{
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background: white;
+    padding: 15px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+button{
+    padding: 10px 10px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+/* Hero section */
+.hero{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.hero_image img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tag{
+    background-color: rgba(139, 0, 139, 0.866);
+    padding: 10px 10px;
+    color: aliceblue;
+    align-self: flex-start;
+    font-size: 18px;
+}
+.hero_content h1{
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.hero_content p{
+    font-weight: lighter;
+}
+.ex_button{
+background-color: #fe9226e2;
+align-self: flex-start;
+font-size: 18px;
+}
+.features{
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+.feature{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    transition:  0.2s ease-in-out;
+}
+.feature:hover{
+    transition:  0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.05);
+}
+.feature img{
+    width: 100px;
+    height:100px;
+    
+}
+.feature_content p{
+    font-weight: lighter;
+    font-size: 14px;
+    padding-top: 5px;
+}
+.feature_content h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+   
+}
+.divider{
+    border-top: 2px solid #0c0b0b32;
+    margin: 20px 0;
+}
+
+
+
+
+@media( max-width: 786px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero_image img{
+        width:90%;
+    }
+    .hero_image{
+        display: flex;
+        justify-content: center;
+    }
+    .hero_content{
+        gap: 10px;
+        padding: 10px;
+    }
+    .hero_content h1{
+        font-size: 36px;
+    }
+
+}
